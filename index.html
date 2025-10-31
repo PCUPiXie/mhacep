@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental Wellness Hub - Awareness & Support</title>
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Inter font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body {
@@ -41,7 +39,6 @@
 </head>
 <body class="text-gray-800">
 
-    <!-- Header & Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <h1 class="text-3xl font-bold text-blue-600">
@@ -52,7 +49,6 @@
                 <a href="#feedback" class="text-gray-600 hover:text-blue-600 transition duration-300">Share Anonymously</a>
                 <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Get Help Now</a>
             </nav>
-            <!-- Mobile Menu Button - Left empty for simplicity in single-file design -->
             <div class="md:hidden">
                 <button class="text-gray-600 hover:text-blue-600 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -61,26 +57,21 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-        <!-- Hero Section -->
         <section class="text-center mb-16 bg-blue-50 p-8 rounded-xl shadow-lg">
-            <h2 class="text-5xl font-extrabold text-blue-700 mb-4">You Are Not Alone.</h2>
+            <h2 class="text-5xl font-extrabold text-blue-700 mb-4">Every Thought Deserves Care</h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                 Discover articles, understand common symptoms, learn coping techniques, and find immediate support resources for mental health awareness.
             </p>
         </section>
 
-        <!-- 1. Articles and Resources Section -->
         <section id="resources" class="mb-16">
             <h3 class="text-4xl font-bold text-center text-blue-600 mb-10 border-b-2 border-green-300 pb-3">Essential Reading & Resources</h3>
             
-            <!-- Symptoms and Coping Subsection -->
             <div class="bg-indigo-50 p-6 rounded-xl shadow-md mb-12">
                 <h4 class="text-3xl font-semibold text-indigo-700 mb-6 text-center">Know the Signs & Build Resilience</h4>
                 <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Symptoms Card -->
                     <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-indigo-500">
                         <h5 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
                             Common Signs to Look For
@@ -97,7 +88,6 @@
                         </ul>
                     </div>
 
-                    <!-- Coping Techniques Card -->
                     <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-indigo-500">
                         <h5 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
                             Immediate Coping Techniques
@@ -114,24 +104,18 @@
                 </div>
             </div>
 
-            <!-- Deep Dive Articles Subsection (Dynamically filtered) -->
             <h4 class="text-3xl font-semibold text-gray-700 mb-6">Deep Dive Articles by Topic</h4>
 
-            <!-- Category Selector Tabs -->
             <div id="category-selector" class="flex flex-wrap justify-center space-x-2 sm:space-x-4 mb-8 p-3 bg-white rounded-xl shadow-md">
-                <!-- Buttons will be rendered here by JS -->
-            </div>
+                </div>
 
-            <!-- Article List Container (The dynamic content area) -->
             <div id="article-list-container" class="grid md:grid-cols-3 gap-8">
-                <!-- Articles will be dynamically loaded here -->
                 <div class="md:col-span-3 text-center p-8 text-gray-500 italic" id="loading-placeholder">
                     Loading articles...
                 </div>
             </div>
         </section>
 
-        <!-- 2. Anonymous Feedback Form -->
         <section id="feedback" class="mb-16 bg-gray-100 p-8 rounded-xl shadow-inner">
             <h3 class="text-4xl font-bold text-center text-blue-600 mb-6">Share Your Experience Anonymously</h3>
             <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -170,7 +154,6 @@
             </form>
         </section>
         
-        <!-- NEW: Live Community Feed Section -->
         <section class="mb-16">
             <h3 class="text-4xl font-bold text-center text-blue-600 mb-6">Community Voices (Anonymous)</h3>
             <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -178,53 +161,47 @@
             </p>
 
             <div id="communityFeedContainer" class="max-w-4xl mx-auto grid grid-cols-1 gap-4">
-                <!-- Feed items will be rendered here -->
                 <div id="feedLoading" class="text-center p-4 text-gray-500 italic bg-white rounded-xl shadow-md">
                     Connecting to community feed...
                 </div>
             </div>
         </section>
 
-        <!-- 3. Contact Information for Help Lines and Counselors -->
         <section id="contact" class="mb-16">
             <h3 class="text-4xl font-bold text-center text-blue-600 mb-10 border-b-2 border-green-300 pb-3">Immediate Help & Support Lines</h3>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Helpline Card 1: Crisis Support -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-red-50 p-6 rounded-xl shadow-lg card-glow border-t-4 border-red-500">
-                    <h4 class="text-2xl font-semibold text-red-700 mb-3">CRISIS & EMERGENCY</h4>
+                    <h4 class="text-2xl font-semibold text-red-700 mb-3">INDIA - National Crisis Line</h4>
                     <p class="text-gray-600 mb-4">
-                        If you or someone you know is in immediate danger, please call the emergency number for immediate intervention.
+                        **KIRAN Helpline:** A national toll-free helpline launched by the Government of India for mental health support and counseling.
                     </p>
-                    <p class="text-3xl font-extrabold text-red-600">988</p>
-                    <p class="text-sm text-gray-500">Call or Text 24/7 (Example: US Suicide & Crisis Lifeline)</p>
+                    <p class="text-3xl font-extrabold text-red-600">1800-599-0019</p>
+                    <p class="text-sm text-gray-500">Call Toll-Free 24/7 (India)</p>
                 </div>
 
-                <!-- Helpline Card 2: Non-Crisis Counseling -->
                 <div class="bg-blue-50 p-6 rounded-xl shadow-lg card-glow border-t-4 border-blue-500">
-                    <h4 class="text-2xl font-semibold text-blue-700 mb-3">Non-Crisis Support</h4>
+                    <h4 class="text-2xl font-semibold text-blue-700 mb-3">INDIA - Non-Crisis & Suicide Prevention</h4>
                     <p class="text-gray-600 mb-4">
-                        For non-emergency support, resources, and finding local counselors. Available for all ages.
+                        **AASRA:** Provides a listening ear to people who are depressed, despairing or suicidal.
                     </p>
-                    <p class="text-3xl font-extrabold text-blue-600">1-800-HELPNOW</p>
-                    <p class="text-sm text-gray-500">Trained counselors available M-F, 9am-5pm local time.</p>
+                    <p class="text-3xl font-extrabold text-blue-600">022-27546669</p>
+                    <p class="text-sm text-gray-500">Available 24/7 (Mumbai-based, serves all of India)</p>
                 </div>
-
-                <!-- Additional Resource -->
-                <div class="md:col-span-2 bg-green-50 p-6 rounded-xl shadow-lg card-glow border-t-4 border-green-500">
-                    <h4 class="text-2xl font-semibold text-green-700 mb-3">Text Support Service</h4>
+                
+                <div class="bg-green-50 p-6 rounded-xl shadow-lg card-glow border-t-4 border-green-500">
+                    <h4 class="text-2xl font-semibold text-green-700 mb-3">International/US Crisis Support</h4>
                     <p class="text-gray-600 mb-4">
-                        Connect with a crisis counselor via text message anytime, day or night.
+                        A quick, easy-to-remember lifeline connecting you to trained counselors (Example: US Suicide & Crisis Lifeline).
                     </p>
-                    <p class="text-3xl font-extrabold text-green-600">Text 'HOME' to 741741</p>
+                    <p class="text-3xl font-extrabold text-green-600">988</p>
+                    <p class="text-sm text-gray-500">Call or Text 24/7 (Primarily US/Canada)</p>
                 </div>
-
             </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 mt-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
             <p>&copy; 2024 Mental Health Awareness. All rights reserved. This site is for informational purposes and not a substitute for professional medical advice.</p>
@@ -235,7 +212,6 @@
     </footer>
 
 
-    <!-- Firebase Initialization and Scripting -->
     <script type="module">
         // Import necessary Firebase modules
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
@@ -282,7 +258,7 @@
                             await signInWithCustomToken(auth, initialAuthToken);
                         } else {
                             // Fallback to anonymous sign-in
-                             await signInAnonymously(auth);
+                            await signInAnonymously(auth);
                         }
                         // If successful, onAuthStateChanged will fire again with a valid user object (Case 1).
                     } catch (error) {
@@ -513,8 +489,8 @@
                 const limitedData = sortedData.slice(0, 10); // Limit to 10 for display
 
                 if (limitedData.length === 0) {
-                     communityFeedContainer.innerHTML = '<div class="text-center p-4 text-gray-500 italic bg-white rounded-xl shadow-md">No community posts yet. Be the first to share!</div>';
-                     return;
+                       communityFeedContainer.innerHTML = '<div class="text-center p-4 text-gray-500 italic bg-white rounded-xl shadow-md">No community posts yet. Be the first to share!</div>';
+                       return;
                 }
 
                 // 2. Render the sorted and limited feed items
@@ -551,6 +527,3 @@
     </script>
 </body>
 </html>
-
-
-
